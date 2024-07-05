@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Fact-check game</title>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h1>Fact-checking game</h1>
+      <p>
+        Teste sua habilidade de identificar fatos e boatos sobre as eleições no
+        Brasil
+      </p>
+      <div id="scorePanel">Acertos: 0/10</div>
+      <div id="quizContainer"></div>
+      <button id="infoButton">Entenda as etiquetas de classificação</button>
+      <button id="restartButton" style="display: none">Reiniciar</button>
+      <div id="tooltip" class="tooltip">
+        <p>
+          <strong>Verdadeiro:</strong> afirmação que é correta e baseada em
+          fatos verificáveis. As informações fornecidas foram confirmadas por
+          fontes confiáveis e independentes.
+        </p>
+        <p>
+          <strong>Falso:</strong> afirmação que está incorreta e não tem base em
+          fatos reais. As informações fornecidas foram desmentidas ou explicadas
+          por fontes confiáveis, como o TSE, mesmo que nem todas tenham sido
+          alvo de uma verificação específica.
+        </p>
+        <p>
+          <strong>Enganoso:</strong> afirmação que utiliza dados imprecisos ou
+          apresenta informações de maneira que induz o leitor ao erro. A
+          afirmação pode confundir, com ou sem a intenção deliberada de causar
+          dano.
+        </p>
+      </div>
+    </div>
+
+    <template id="questionTemplate">
+      <div class="questionBox">
+        <p class="questionText"></p>
+        <div class="buttons">
+          <button class="verdadeiroButton">Verdadeiro</button>
+          <button class="falsoButton">Falso</button>
+          <button class="enganosoButton">Enganoso</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="respostaCorreta" style="display: none"></div>
+        <button class="nextButton" style="display: flex">Próxima</button>
+        <!-- Inicialmente oculto -->
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>

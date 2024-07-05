@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: Merriweather, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#mainContainer > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #0c0b0b;
+  width: 100%;
+}
+
+#scorePanel {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.questionBox {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.questionText {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 16px;
+  font-family: Merriweather, serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verdadeiroButton {
+  background-color: #41af2d;
+  color: white;
+}
+
+.falsoButton {
+  background-color: #e02517;
+  color: white;
+}
+
+.enganosoButton {
+  background-color: #dd8501;
+  color: white;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.nextButton {
+  margin-top: 20px;
+  display: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Merriweather, serif;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 0px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: pink #333 pink pink;
+}
+
+#infoButton {
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  left: 60px;
+  font-size: 16px;
+  background-color: #566677;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+#quizContainer {
+  width: 100%; /* Certifique-se que o width é suficiente para conter o conteúdo */
+  max-width: 100%; /* Ajuste conforme necessário para não ultrapassar o container pai */
+  padding: 20px; /* Adicione padding para espaçamento interno */
+  box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+.restartButton {
+  margin-top: 20px;
+  display: block; /* ou inline-block, dependendo do contexto */
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Merriweather, serif;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
