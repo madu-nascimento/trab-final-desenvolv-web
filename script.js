@@ -11,7 +11,7 @@ let dadosQuiz = [
     pergunta: "As urnas eletrônicas no Brasil são auditáveis",
     respostaCorreta: "verdadeiro",
     linkInfo:
-      "https://www.tse.jus.br/urna-eletronica/auditoria-da-urna-eletronica",
+      "https://www.tre-se.jus.br/comunicacao/noticias/2023/Janeiro/voce-sabia-que-o-sistema-eletronico-de-votacao-e-totalmente-auditavel",
   },
   {
     pergunta:
@@ -37,7 +37,8 @@ let dadosQuiz = [
   {
     pergunta: "O eleitor pode votar em qualquer seção eleitoral",
     respostaCorreta: "falso",
-    linkInfo: "https://www.tse.jus.br/eleitor/locais-de-votacao",
+    linkInfo:
+      "https://www.tse.jus.br/comunicacao/noticias/2024/Marco/transferencia-temporaria-saiba-quais-sao-as-regras-para-poder-votar-em-outra-secao-eleitoral",
   },
   {
     pergunta:
@@ -57,7 +58,8 @@ let dadosQuiz = [
     pergunta:
       "Os resultados das eleições no Brasil são divulgados no mesmo dia da votação",
     respostaCorreta: "verdadeiro",
-    linkInfo: "https://www.tse.jus.br/eleicoes/divulgacao-dos-resultados",
+    linkInfo:
+      "https://www.tre-sc.jus.br/comunicacao/noticias/2024/Marco/eleicoes-2024-confira-o-que-acontece-apos-a-votacao-ate-a-divulgacao-dos-resultados",
   },
   {
     pergunta:
